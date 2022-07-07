@@ -63,7 +63,9 @@ Semplice da capire:
 ```
 <padre>
   <figlio>
-    <nipote></nipote>
+    <nipote>
+      <nipote></nipote>
+    </nipote>
   </figlio>
   <iochisono>
     <nipote></nipote>
@@ -113,6 +115,54 @@ Un gruppo di attributi compatibili con tutti i tag html
 es.: ` id="il-mio-id"`
 es.: `<element id="il-mio-id"></element>`
 es.: `<h1 id="il-mio-id"></h1>`
+
+sbagliato:
+`<element id="il-mio id"></element>`
+
+sbagliato:
+`<element id="il-mio prova"></element>`
+
+corretto:
+`<element id="il-mio-id"></element>`
+
+trova l'errore:
+
+```
+<element id="hello"></element>
+<element>
+  <element>
+    <element id="pippo">
+
+    </element>
+  </element id="pluto">
+</element>
+```
+
+trova l'errore:
+
+```
+<element id="hello"></element>
+<element>
+  <element>
+    <element id="hello">
+
+    </element>
+  </element>
+</element>
+```
+
+corretto:
+
+```
+<element></element>
+<element>
+  <element>
+    <element id="hello">
+
+    </element>
+  </element>
+</element>
+```
 
 ### Tag Html
 

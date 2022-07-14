@@ -164,6 +164,57 @@ corretto:
 </element>
 ```
 
+#### Attributo CLASS
+
+- Attributo globale
+- Accetta più valori sotto forma di stringhe separate da spazi
+- Le stesse classi possono essere riutilizzate per più tag
+
+es.: ` class="pippo pluto"`
+
+es.: `<element class="pippo pluto"></element>`
+
+es.: `<h1 class="pippo pluto"></h1>`
+
+esempi:
+
+```
+<element class="pippo pluto"></element>
+<element id="pippo">
+  <element class="pippo">
+    <element class="pluto">
+
+    </element>
+  </element>
+</element>
+```
+
+```
+<div class="titolo">Ultimi articoli</div>
+<div id="ultimi-articoli">
+  <div class="articolo">
+    <h2 class="titolo">test</h2>
+    <div class="corpo">contenuto</div>
+  </div>
+  <div class="articolo">
+    <h2 class="titolo">test</h2>
+    <div class="corpo">contenuto</div>
+  </div>
+  <div class="articolo">
+    <h2 class="titolo">test</h2>
+    <div class="corpo">contenuto</div>
+  </div>
+  <div class="articolo">
+    <h2 class="titolo">test</h2>
+    <div class="corpo">contenuto</div>
+  </div>
+  <div class="articolo">
+    <h2 class="titolo">test</h2>
+    <div class="corpo">contenuto</div>
+  </div>
+</div>
+```
+
 ### Tag Html
 
 [Lista completa di tutti i tag html](https://www.w3schools.com/tags/default.asp)

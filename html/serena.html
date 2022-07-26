@@ -6,9 +6,27 @@
         color: green;
         background-color: greenyellow;
         text-align: center;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
       }
       h2 {
-        color: rgb(140, 159, 111);
+        color: greenyellow;
+        text-align: justify;
+        font-family: "Lucida Sans";
+      }
+      .updates {
+        color: red;
+        font-weight: 700;
+        font-variant: small-caps;
+      }
+      .news {
+        color: blue;
+      }
+      .paragraph {
+        border: 3px;
+        border-style: dotted;
+        border-color: green;
+        padding: 10px;
         text-align: justify;
       }
     </style>
@@ -17,7 +35,7 @@
     <h1>
       <b><em>Sumeru leaks</em></b>
     </h1>
-    <div style="border: 3px dotted green">
+    <div class="paragraph">
       <h2><i>Sumeru :</i></h2>
       <p>
         Sumeru is one of the seven regions in Teyvat. It is the region that
@@ -36,15 +54,17 @@
       </p>
     </div>
     <ul>
-      <li>3.0 Update</li>
-      <ol>
-        <li>Enemies</li>
-        <li>Boss</li>
-        <li>Domains</li>
-        <li>Quests</li>
-      </ol>
-      <li>3.1 Update</li>
-      <li>3.2 Update</li>
+      <li class="updates">
+        3.0 Update
+        <ol>
+          <li class="news">Enemies</li>
+          <li class="news">Boss</li>
+          <li class="news">Domains</li>
+          <li class="news">Quests</li>
+        </ol>
+      </li>
+      <li class="updates">3.1 Update</li>
+      <li class="updates">3.2 Update</li>
     </ul>
   </body>
 </html>
